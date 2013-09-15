@@ -1,21 +1,26 @@
 ---
-extends: base.j2
+extends: col-lg-6-6.j2
 title: About
 subtitle: About paage.
 description: Test description
 ---
-{% block main %}
 
-{% filter markdown -%}
+{% block column1 %}
 
 ###Heading
-
 
 Lady Malvern was a hearty, happy, healthy, overpowering sort of dashed female,
 not so very tall but making up for it by measuring about six feet from the
 O.P. to the Prompt Side. 
 
-{%- endfilter %}
+{% endblock column1 %}
 
-{% endblock main %}
+{% block column2 %}
 
+###Heading
+
+Lady Malvern was a hearty, happy, healthy, overpowering sort of dashed female,
+not so very tall but making up for it by measuring about six feet from the
+O.P. to the Prompt Side. 
+
+{% endblock column2 %}

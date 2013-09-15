@@ -1,0 +1,26 @@
+{% extends "base.j2" %}
+
+{% block content %}
+
+<div class="col-lg-4">
+{% filter markdown -%}
+{% block column1 %}{% endblock column1 %}
+{%- endfilter %}
+<p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+</div>	
+
+<div class="col-lg-4">
+{% filter markdown -%}
+{% block column2 %}{% endblock column2 %}
+{%- endfilter %}
+<p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+</div>	
+
+<div class="col-lg-4">
+{% filter markdown -%}
+{% block column3 %}{% endblock column3 %}
+{%- endfilter %}
+<p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+</div>	
+
+{% endblock content %}

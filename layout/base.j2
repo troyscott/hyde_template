@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  	<!-- Copyright 2013 - Troy Scott -->
 	<meta charset="utf-8">
-	<title>My Web Site</title>
+	<title>{{ site.name }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
@@ -17,16 +16,16 @@
 <div class="container">
 	<!-- Example row of columns -->
       <div class="row">
-{% block main %}
-
-
-{% endblock main %}
+{% filter markdown -%}
+{% block content %}{% endblock content %}
+{%- endfilter %}
  </div> <!-- row -->
 
 {% block footer %}
 	{% include "footer.j2" %}
 {% endblock footer %}
 </div> <!-- /container -->
+
 {% block scripts %}
 	<script src="//code.jquery.com/jquery.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
