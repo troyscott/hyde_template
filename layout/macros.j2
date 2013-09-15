@@ -1,0 +1,7 @@
+{% macro render_contacts() -%}
+{% for contact in contacts %}
+	Name: {{ contact.name }}
+	Mobile: {{ contact.mobile }}
+	
+{% endfor %}
+{%- endmacro %}

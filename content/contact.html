@@ -5,10 +5,6 @@ subtitle: Site home page.
 description: Test description
 ---
 {% block content %}
-#Contact
-
-Name: <br>
-Mobile: <br>
-E-Mail:  <br>
-
+#Contacts
+{{ macros.render_contacts() }}
 {% endblock content %}

@@ -28,4 +28,9 @@ context:
         url: /
       - title: About
       - url: /about.html
+    contacts:
+      - name: John Doe
+        mobile: (777) 777-8888
+      - name: Jane Doe
+        mobile: (888)888-7777  
       
